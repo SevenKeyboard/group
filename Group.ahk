@@ -1,4 +1,4 @@
-﻿#Requires AutoHotkey v1.1.21+
+﻿#Requires AutoHotkey v1.1.35+
 ;==============================================================
 ; Group — Window group management helper (add/delete/active/exist)
 ;
@@ -92,7 +92,7 @@ class Group
         ret:=""
         if (isObject(this.list[groupName]))    {
             for k,v in this.list[groupName]
-                ret.=(ret!=""?delim:"") v
+                ret.=(ret!==""?delim:"") v
         }
         return ret
     }
